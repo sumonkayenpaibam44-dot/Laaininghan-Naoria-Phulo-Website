@@ -9,9 +9,9 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
       background: #2c3e50;
@@ -19,11 +19,21 @@
       padding: 20px 0;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
     }
-    main {
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
@@ -45,14 +55,50 @@
     <h1>Laininghan Naoria Phulo</h1>
   </header>
 
-  <main>
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#teachings">Teachings</a>
+    <a href="#books">Books</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
     <h2>About</h2>
     <p>
       This website is created to understand the life of 
       <strong>Laininghan Naoria Phulo</strong>. The teachings and preachings given by him during his 
       lifespan and how the revival of the Meetei community is being written through various books.
     </p>
-  </main>
+  </section>
+
+  <!-- Teachings Section -->
+  <section id="teachings">
+    <h2>Teachings</h2>
+    <p>
+      His teachings emphasized truth, unity, and revival of the cultural and spiritual identity 
+      of the Meetei people.
+    </p>
+  </section>
+
+  <!-- Books Section -->
+  <section id="books">
+    <h2>Books</h2>
+    <p>
+      Many books have been written on his life and thoughts, preserving the heritage and wisdom 
+      of his movement.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      For more details or contributions to this website, you can reach out at 
+      <a href="mailto:example@email.com">example@email.com</a>
+    </p>
+  </section>
 
   <footer>
     <p>© 2025 Laininghan Naoria Phulo Website</p>
