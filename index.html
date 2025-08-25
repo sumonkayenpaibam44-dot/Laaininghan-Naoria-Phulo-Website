@@ -16,22 +16,31 @@
     }
 
     /* Full background with dark overlay */
-    .hero-bg {
-      position: relative;
-      background-image: url('phulo.jpg');  /* your uploaded image */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      color: white;
-      z-index: 1;
-      font-family: 'Georgia', serif;
-    }
+.hero-bg {
+  position: relative;
+  background-image: url('phulo.jpg');
+  background-size: cover;              /* default: fill screen */
+  background-position: top center;     /* keep head visible */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+  font-family: 'Georgia', serif;
+}
+ 
+/* Responsive fix for smaller screens */
+@media (max-width: 1024px) {
+  .hero-bg {
+    background-size: contain;          /* show full image */
+    background-position: top center;
+    background-color: black;           /* fill empty space */
+  }
+}
 
     .hero-bg::before {
       content: "";
